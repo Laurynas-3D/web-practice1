@@ -1,0 +1,64 @@
+
+<html>
+<head>
+
+    <title>Single page Web!</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    
+</head>
+    <body>
+        
+        <div class="container">
+            <div class="menu">
+            <ul>
+                <li style="color: white" class="logo"><i class="fab fa-buffer"></i></li>
+                <li class="active">Home</li>
+                <li>Services</li>
+                <li>Product</li>
+                <li>Contact</li>
+                <li><a href="#" class="signup-btn"><span>Sign Up</span></a></li>
+            </ul>
+                <div class="banner">
+                    <div class="App-text">
+                        <h1>HTML and CSS</h1>
+                        <div id="app"><h3>{{ message }}</h3></div>
+                        <p>Example web page to practice HTML and CSS skills. <br>  Experimentation in designing single web page with <br>neon color theme.</p>
+                        <div class="play-btn">
+                            <div class="play-btn-inner"><i class="fa fa-play"></i></div>
+                            <small><b>LEARN MORE</b></small>
+                        </div>
+                    </div>                    
+
+                </div>
+            </div>
+                <div class="quick-links">
+                    <ul>
+                        <li><i class="fas fa-share-alt"></i><p>SHARE TO</p></li>
+                        <li><i class="fas fa-audio-description"></i><p>RECENT NEWS</p></li>
+                        <li><i class="fas fa-cog"></i><p>ANALYTICS</p></li>
+                        <li><i class="fab fa-bitcoin"></i><p>WALLET</p></li>
+                    </ul>
+                </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="app-picture">
+<!--                <img src="img/general/dotted-texture-gradient.png">-->
+                <img src="./img/svg/Asset-4.svg">
+            </div>
+        </div>
+        
+        <script src="main.js"></script>
+        
+    </body>
+</html>
