@@ -1,7 +1,7 @@
 <html xmlns:v-bind="http://www.w3.org/1999/xhtml">
     <head>
 
-        <title>Practice page V5</title>
+        <title>Practice page V4</title>
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -27,20 +27,9 @@
                         <h1>HTML and CSS</h1>
                         <div id="textHello"><h3>{{ message }}</h3></div>
                         <div id="textDesc"><p>{{ message }}</p></div>
-                        <div class="play-btn" id="appList">
-                            <ul>
-                                <p>&nbsp;</p>
-                            </ul>
-                            <div class="play-btn-inner" 
-                                 v-for="variant in variants" 
-                                 :key="variant.variantId"
-                                 
-                                 :style="{ backgroundColor: variant.variantColor }" 
-                                 @mouseover="updateProduct(variant.variantImage)"><i class="fa fa-play"></i>
-                            </div>
-
-
-                            <img class="app-picture" v-bind:src="image">
+                        <div class="play-btn">
+                            <div class="play-btn-inner"><i class="fa fa-play"></i></div>
+                            <div class="play-btn-inner"><i class="fa fa-play"></i></div>
                         </div>
                     </div>                    
 
@@ -64,15 +53,13 @@
             </div>
 
             <div class="app-picture">
-                <div id="appList-backup">
-                    <!--
-<div v-for="variant in variants" 
-:key="variant.variantId"
-class="color-box"
-:style="{ backgroundColor: variant.variantColor }" 
-@mouseover="updateProduct(variant.variantImage)">
-</div>
--->
+                <div id="appList">
+                    <div v-for="variant in variants" 
+                         :key="variant.variantId"
+                         class="color-box"
+                         :style="{ backgroundColor: variant.variantColor }" 
+                         @mouseover="updateProduct(variant.variantImage)">
+                    </div>
                     <img v-bind:src="image">
                 </div>
             </div>
