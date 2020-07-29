@@ -24,6 +24,14 @@ h3{
     background: #42455a;
 }
 */
+.color-box{
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+/*    border: solid 1px aliceblue;*/
+    border: 2px solid transparent;
+    
+}
 .menu ul{
     display: inline-flex;
     margin: 50px;
@@ -67,16 +75,15 @@ h3{
     padding: 8px 22px;
 }
 .banner {
-    width: 80%;
-    height: 70%;
-    top: 25%;
-    left: 130px;
+    width: auto;
+    height: auto;
+    top: 15%;
+    left: 90px;
     position: absolute;
     color: white;
     
 }
 .App-text{
-    width: 50%;
     float: left;
 }
 .App-text h1, h2{
@@ -97,28 +104,20 @@ h3{
     color: #919191;
 }
 .app-picture{
-    width: 70%;
-    max-width: 75%;
+    max-width: 850px;
+    min-width: 500px;
     float: right;
     margin-top: 0px;
-}
-.app-picture2{
-    width: 100;
-    float: right;
-    margin-top: 50px;
-    padding-bottom: 50px;
     position: absolute;
-}
-.app-picture img{
-/*    transform: rotate(20deg);*/
-    margin-top: 0px;
-    padding-left: 0px;
-    
+    left: 15rem;
+    top: 10rem;
     
 }
+
 .play-btn{
     margin-left: 40px;
-    display: inline-flex;
+
+    
 }
 .play-btn-inner{  
     height: 50px;
@@ -130,6 +129,7 @@ h3{
     background-clip: content-box, border-box;
     text-align: center;
     text-shadow: 1px 1px 9px red;
+    margin: 10px;
 }
 .play-btn-inner .fa{
     padding: 18px 0;
